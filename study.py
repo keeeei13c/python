@@ -42,10 +42,98 @@
 
 # menu(entree='beef',drink='beer',dessert='ice')
 
-def test_func(x,l=[]):
-  l.append(x)
-  return l
+# def test_func(x,l=[]):
+#   l.append(x)
+#   return l
 
-y = [1,2,3]
-r = test_func(100,y)
-print(r)
+# y = [1,2,3]
+# r = test_func(100,y)
+# print(r)
+
+# def menu(entree,drink,dessert):
+#   print(entree)
+#   print(drink)
+#   print(dessert)
+
+# menu('beef','beer','ice')
+
+# def say_something(*args):
+#   for arg in args:
+#     print(arg)
+
+# say_something('Hi','mike','thank you')
+
+# def menu(food, *args, **kwargs):
+#   print(food)
+#   print(args)
+#   print(kwargs)
+
+# menu('banana','apple','orange','tomato',entree='beef',drink='coffee')
+
+# a = {
+#   'entree':'beef',
+#   'drink':'ice coffee',
+#   'dessert':'ice'
+# }
+
+# menu(**a)
+
+# def outer(a,b):
+#   def inner():
+#     return a + b
+
+#   return inner
+
+# f = outer(1,2)
+# r = f()
+# print(f)
+
+# def print_info(func):
+#   def wrapper(*args, **kwargs):
+#     print('start')
+#     result = func(*args, **kwargs)
+#     print('end')
+#     return result
+
+
+# def add_num(a,b):
+#   return a + b
+
+# print('start')
+# r = add_num(10,20)
+# print('end')
+
+# print(r)
+
+
+"""
+lambda
+"""
+# l = ['Mon','Tue','wed','Thu','fri','sat','Sun']
+
+# def change_words(words, func):
+#   for word in words:
+#     print(func(word))
+
+# # sample_func = lambda word: word.capitalize()
+# change_words(l, lambda word: word.capitalize())
+
+l = ['Good morning','Good afternoon','Good night']
+
+for i in l:
+  print(i)
+
+print('##############')
+
+def greeting():
+  yield 'Good morning'
+  yield 'Good afternoon'
+  yield 'Good night'
+
+# for g in greeting():
+#   print(g)
+
+g = greeting()
+print(next(g))
+print(next(g))
+print(next(g))
