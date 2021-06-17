@@ -1,4 +1,3 @@
-
 # days = ['Mon','Tue','Wed']
 # fruits = ['apple', 'banana', 'orange']
 # drinks = ['coffee','tea','beer']
@@ -118,22 +117,84 @@ lambda
 # # sample_func = lambda word: word.capitalize()
 # change_words(l, lambda word: word.capitalize())
 
-l = ['Good morning','Good afternoon','Good night']
+"""
+generater
+"""
+# l = ['Good morning','Good afternoon','Good night']
 
-for i in l:
-  print(i)
+# for i in l:
+#   print(i)
 
-print('##############')
+# print('##############')
 
-def greeting():
-  yield 'Good morning'
-  yield 'Good afternoon'
-  yield 'Good night'
+# def greeting():
+#   yield 'Good morning'
+#   yield 'Good afternoon'
+#   yield 'Good night'
 
 # for g in greeting():
 #   print(g)
 
-g = greeting()
-print(next(g))
-print(next(g))
-print(next(g))
+# g = greeting()
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+# t = (1,2,3,4,5)
+
+# r=[]
+# for i in t:
+#   r.append(i)
+# r = [i for i in t if i % 2 == 0]
+# print(r)
+
+# w = ['mon','tue','wen']
+# f = ['coffee','milk','water']
+
+# d = {}
+# for x,y in zip(w,f):
+#   d[x] = y
+
+# print(d)
+
+# d = {x:y for x,y in zip(w,f)}
+
+
+"""
+import文
+"""
+# import lesson_package.utils
+
+# from lesson_package import utils
+# from lesson_package.talk import human
+# # r = utils.say_twice('hello')
+
+# # print(r)
+# print(human.sing())
+
+
+
+"""
+from lesson_package.utils import say_twice 
+
+r = say_twice('hello')
+
+print(r)
+
+でも呼び出せるが好まれていない
+どこから関数を呼び出しているかわかりにくいため
+"""
+# import builtins
+
+# ranking = {
+#   'A': 100,
+#   'B': 85,
+#   'C':97
+# }
+# print(sorted(ranking , key=ranking.get,reverse=True))
+
+from termcolor import colored
+
+print('test')
+
+print(colored('test'))
