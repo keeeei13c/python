@@ -210,3 +210,22 @@ if __name__ == __main__:
 # print('config',__name__)
 # print(__name__)
 
+class Person(object):
+  def __init__(self, name='Mike'):
+    self.name = name
+
+  def say_something(self):
+    print('I am {}. hello'.format(self.name))
+    self.run(10)
+
+  def run(self,num):
+    print('run:' * num)
+
+  def __del__(self):
+    print('good bye')
+
+person = Person('johnson')
+person.say_something()
+
+del person
+print('#########')
