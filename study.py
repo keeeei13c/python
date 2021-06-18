@@ -193,8 +193,20 @@ print(r)
 # }
 # print(sorted(ranking , key=ranking.get,reverse=True))
 
-from termcolor import colored
+# from termcolor import colored
 
-print('test')
+# print('test')
 
-print(colored('test'))
+# print(colored('test','magenta'))
+"""
+__name__ と __main__ 理解あまりできていない
+別ファイルからimport するとき勝手に作動しないように書いておくおまじない
+
+if __name__ == __main__:
+
+"""
+# import config
+
+# print('config',__name__)
+# print(__name__)
+
