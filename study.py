@@ -210,22 +210,97 @@ if __name__ == __main__:
 # print('config',__name__)
 # print(__name__)
 
-class Person(object):
-  def __init__(self, name='Mike'):
-    self.name = name
+# class Person(object):
+#   def __init__(self, name='Mike'):
+#     self.name = name
 
-  def say_something(self):
-    print('I am {}. hello'.format(self.name))
-    self.run(10)
+#   def say_something(self):
+#     print('I am {}. hello'.format(self.name))
+#     self.run(10)
 
-  def run(self,num):
-    print('run:' * num)
+#   def run(self,num):
+#     print('run:' * num)
 
-  def __del__(self):
-    print('good bye')
+#   def __del__(self):
+#     print('good bye')
 
-person = Person('johnson')
-person.say_something()
+# person = Person('johnson')
+# person.say_something()
 
-del person
-print('#########')
+# del person
+# print('#########')
+
+# class Car(object):
+#   def __init__(self,model=None):
+#     self.model = model
+#   def run(self):
+#     print('run')
+# class ToyotaCar(Car):
+#   def run(self):
+#     print('fast')
+
+# class TeslaCar(Car):
+#   def run(self):
+#     print('super fast')
+
+#   def auto_run(self):
+#     print('auto run')
+
+# tesla_car = TeslaCar('Model S')
+# print(tesla_car.model)
+# tesla_car.run()
+# tesla_car.auto_run()
+
+
+# class A(object):
+#   pass
+
+# a = A()
+# a.name = 'Mike'
+# a.age = 20
+# print(a.name,a.age) 
+
+# class Person(object):
+#   def talk(self):
+#     print('talk')
+
+# class Car(object):
+#   def run(self):
+#     print('run')
+
+# class PersonCarRobot(Person,Car):
+#   def fly(self):
+#     print('fly')
+
+# person_car_robot = PersonCarRobot()
+# person_car_robot.talk()
+# person_car_robot.run()
+# person_car_robot.fly()
+
+
+# class Person(object):
+
+#   kind = 'human'
+
+#   def __init__(self):
+#     self.x = 100
+
+# a = Person()
+# print(a.kind)
+# b = Person
+# print(b.kind)
+
+# class Word(object):
+
+#   def __init__(self,text):
+#     self.text = text
+   
+#   def __str__(self):
+#      return 'Word!!!!!!!!!!'
+  
+#   def __len__(self):
+#     return len(self.text)
+#   def __add__(self):
+#     self.text.lower()+ word.text.lower()
+# w = Word('testssss')
+# print(len(w))
