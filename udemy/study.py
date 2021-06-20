@@ -304,3 +304,12 @@ if __name__ == __main__:
 #     self.text.lower()+ word.text.lower()
 # w = Word('testssss')
 # print(len(w))
+
+
+# f = open('test.txt' , 'w')
+# f.write('Test\n')
+# f.close()
+
+with open('test.txt','w') as f:
+    f.write('Test\n')
+
