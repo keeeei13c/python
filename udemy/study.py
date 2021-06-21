@@ -173,7 +173,6 @@ import文
 # print(human.sing())
 
 
-
 """
 from lesson_package.utils import say_twice 
 
@@ -258,7 +257,7 @@ if __name__ == __main__:
 # a = A()
 # a.name = 'Mike'
 # a.age = 20
-# print(a.name,a.age) 
+# print(a.name,a.age)
 
 # class Person(object):
 #   def talk(self):
@@ -294,10 +293,10 @@ if __name__ == __main__:
 
 #   def __init__(self,text):
 #     self.text = text
-   
+
 #   def __str__(self):
 #      return 'Word!!!!!!!!!!'
-  
+
 #   def __len__(self):
 #     return len(self.text)
 #   def __add__(self):
@@ -310,6 +309,62 @@ if __name__ == __main__:
 # f.write('Test\n')
 # f.close()
 
-with open('test.txt','w') as f:
-    f.write('Test\n')
+# s = """\
+#      AAA
+#      BBB
+#      CCC
+#      DDD
+#     """
 
+# with open('test.txt','w') as f:
+#     f.write(s)
+
+# with open('test.txt', 'r') as f:
+#     print(f.read())
+
+#     while True:
+#         chunk = 2
+#         line = f.read(chunk)
+#         print(line)
+#         if not line:
+#             break
+
+
+"""
+seekの使い方
+"""
+# with open('test.txt', 'r') as f:
+#     print(f.tell())
+#     print(f.read(1))
+#     f.seek(5)
+#     print(f.read(1))
+#     f.seek(14)
+#     print(f.read(1))
+#     f.seek(20)
+#     print(f.read(1))
+
+# s = """\
+#      AAA
+#      BBB
+#      CCC
+#      DDD
+#     """
+
+# with open('test.txt','w+') as f:
+#     f.write(s)
+#     f.seek(0)
+#     print(f.read())
+
+import string
+
+s = """
+      Hi $name.
+
+      $contents
+
+      Have a good day
+    """
+
+t = string.Template(s)
+contents = t.substitute(name='Mike', contents='How are you')
+print(contents)
