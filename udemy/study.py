@@ -390,3 +390,46 @@ seekの使い方
 
 # print(e^i*p + 1 )
 
+
+#Big O notation Example
+
+#0(log(n))
+
+# def func2(n):
+#     if n <= 1:
+#         return
+#     else:
+#         print(n)
+#         func2(n/2)
+# func2(10)
+
+
+#0(n)
+# def func3(numbers):
+#   for num in numbers:
+#     print(num)
+
+# func3([1,2,3,4])
+
+
+#(n * log(n))
+
+# def func4(n):
+#   for i in range(int(n)):
+#     print(i , end=' ')
+#   print()
+
+#   if n <= 1:
+#     return
+#   func4(n/2)
+
+# func4(10)
+
+# 0(n**2)
+# def func5(numbers):
+#   for i in range(len(numbers)):
+#     for j in range(len(numbers)):
+#       print(numbers[i],numbers[j])
+#     print()
+
+# func5([1,2,3,4,5,6,7,8,9,10])
