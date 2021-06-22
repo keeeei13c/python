@@ -377,3 +377,16 @@ seekの使い方
 #     for row in reader:
 #         print(row['Name'],row['Count'])
 
+
+"""
+オイラーの等式を書きたかった
+"""
+# import math
+# r = math.pi
+
+# e = math.e
+# i = -1
+# p = math.pi
+
+# print(e^i*p + 1 )
+
