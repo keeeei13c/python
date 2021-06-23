@@ -377,6 +377,33 @@ seekの使い方
 #     for row in reader:
 #         print(row['Name'],row['Count'])
 
+# import os
+# import pathlib
+# import glob
+# import shutil
+
+# print(os.path.exists('test.txt'))
+# print(os.path.isfile('test.txt'))
+# print(os.path.isdir('design'))
+# os.symlink('renamed.txt','symlink.txt')
+# os.mkdir('test_dir')
+# os.rmdir('test_dir')
+
+# pathlib.Path('empty.txt').touch()
+# os.remove('empty.txt')
+
+# os.mkdir('test_dir')
+# os.mkdir('test_dir/test_dir2')
+# os.mkdir('test_dir/test_dir2/test_dir3')
+
+# print(os.listdir('test_dir/test_dir2'))
+
+# pathlib.Path('test_dir/test_dir2/empty.txt').touch()
+# print(glob.glob('test_dir/test_dir2/*'))
+# shutil.rmtree('test_dir')
+
+import tarfile
+
 
 """
 オイラーの等式を書きたかった
@@ -433,3 +460,35 @@ seekの使い方
 #     print()
 
 # func5([1,2,3,4,5,6,7,8,9,10])
+
+#sort 
+# l = [(1,'Mike'),(5,'Rina'),(2,'Bill'),(4,'Emily'),(2,'June')
+# ]
+
+# def stable(l):
+#   l[1], l[2] = l[2],l[1]
+#   l[2], l[4] = l[4],l[2]
+
+# print(stable())
+
+
+"""bogo_sort"""
+
+# import random
+
+# def in_order(numbers):
+#   return (i for in range(len(numbers[])))
+  # for i in range(len(numbers)-1):
+  #   if numbers[i] > numbers[i+1]:
+  #     return False
+  # return True
+
+
+# def bogo_sort(numbers):
+#   while not in_order(numbers):
+#       random.shuffle(numbers)
+#   return numbers
+
+# if __name__ == '__main__':
+#     print(bogo_sort([1,5,6,3,2]))
+
