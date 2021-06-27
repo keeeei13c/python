@@ -492,3 +492,10 @@ import tarfile
 # if __name__ == '__main__':
 #     print(bogo_sort([1,5,6,3,2]))
 
+"""while文の使いかた"""
+# time = 60
+# while time > 0:
+#   time -= 1
+#   print("残り",time,"秒")
+
+# print("試合終了！")
