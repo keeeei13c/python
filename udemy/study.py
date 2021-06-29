@@ -499,3 +499,11 @@ import tarfile
 #   print("残り",time,"秒")
 
 # print("試合終了！")
+
+
+# x = [1,2,3,4,5]
+# for i in range(len(x)):
+#   print(x[i])
+
+for i in range(1,100):
+  print(i.ramdom)
