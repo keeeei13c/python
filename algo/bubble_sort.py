@@ -1,4 +1,5 @@
 from typing import List
+from random import randint
 
 def bubble_sort(numbers: List[int]) -> List[int]:
     len_numbers = len(numbers)
@@ -10,5 +11,5 @@ def bubble_sort(numbers: List[int]) -> List[int]:
 
 
 if __name__ == '__main__':
-    nums = [2,5,1,8,7,3]
+    nums = [randint(1,1000) for _ in range(10)]
     print(bubble_sort(nums))
