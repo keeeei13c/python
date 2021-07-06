@@ -1,5 +1,5 @@
 from typing import List
-
+from random import randint
 s = int(input())
 def Linear_search(numbers: List[int],value:int) -> int:
     for i in range(0,len(numbers)):
@@ -10,5 +10,5 @@ def Linear_search(numbers: List[int],value:int) -> int:
 
 
 if __name__ == '__main__':
-    nums = [0, 4, 6, 7, 8, 10, 11, 15, 16]
+    nums = [randint(1,10000) for _ in range(1,1000)]
     print(Linear_search(nums, s))
